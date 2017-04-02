@@ -1,0 +1,11 @@
+*.pyc
+.idea
+iterate.dat
+.DS_Store
+*~
+token.txt
+.git_
+.git_save
+\#*
+token.txt_
+.ipynb_checkpoints
