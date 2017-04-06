@@ -24,4 +24,5 @@ def computeCost(X, y, theta):
 # b  = np.matrix('7;6;5;4')
 # c = np.matrix('0.1;0.2')
 
+
 # print (computeCost(a,b,c))
