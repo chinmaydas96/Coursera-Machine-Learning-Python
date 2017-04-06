@@ -77,7 +77,7 @@ print 'Theta found by gradient descent: '
 print '%s %s \n' % (theta[0], theta[1])
 
 # Plot the linear fit
-plt.figure()
+# plt.figure()
 plotData(data)
 plt.plot(X[:, 1], X.dot(theta), '-', label='Linear regression')
 plt.legend(loc='upper right', shadow=True, fontsize='x-large', numpoints=1)
