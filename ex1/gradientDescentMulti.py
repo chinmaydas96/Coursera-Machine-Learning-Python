@@ -1,6 +1,7 @@
 from computeCostMulti import computeCostMulti
 import numpy as np
 
+
 def gradientDescentMulti(X, y, theta, alpha, num_iters):
     """
      Performs gradient descent to learn theta
@@ -22,9 +23,7 @@ def gradientDescentMulti(X, y, theta, alpha, num_iters):
         #
 
         h = np.dot(X, theta)
-        
-        theta = theta - ((alpha / m) * (np.dot(X.T,(h - y)))) 
-        
+        theta = theta - ((alpha / m) * (np.dot(X.T, (h - y))))
         # Save the cost J in every iteration
         J_history.append(computeCostMulti(X, y, theta))
 
@@ -36,8 +35,8 @@ def gradientDescentMulti(X, y, theta, alpha, num_iters):
     return theta, J_history
 
 
-X = np.matrix('2 1 3; 7 1 9; 1 8 1; 3 7 4 ')
-y = np.matrix('2 ; 5 ; 5 ; 6')    
-theta = np.matrix('0;0;0')
+# X = np.matrix('2 1 3; 7 1 9; 1 8 1; 3 7 4 ')
+# y = np.matrix('2 ; 5 ; 5 ; 6')
+# theta = np.matrix('0;0;0')
 
-print gradientDescentMulti(X,y,theta,0.01,100)
+# print gradientDescentMulti(X, y, theta, 0.01, 100)

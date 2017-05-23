@@ -21,7 +21,7 @@ def computeCostMulti(X, y, theta):
     return J
 
 
-X = np.matrix(' 2 1 3; 7 1 9; 1 8 1; 3 7 4 ')
-y = np.matrix(' 2 ; 5 ; 5 ; 6')
-theta_test = np.matrix('0.4 ; 0.6 ; 0.8')
-print computeCostMulti(X, y, theta_test)
+# X = np.matrix(' 2 1 3; 7 1 9; 1 8 1; 3 7 4 ')
+# y = np.matrix(' 2 ; 5 ; 5 ; 6')
+# theta_test = np.matrix('0.4 ; 0.6 ; 0.8')
+# print computeCostMulti(X, y, theta_test)
