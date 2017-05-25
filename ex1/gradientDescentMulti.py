@@ -21,7 +21,6 @@ def gradientDescentMulti(X, y, theta, alpha, num_iters):
         # Hint: While debugging, it can be useful to print out the values
         #       of the cost function (computeCost) and gradient here.
         #
-
         h = np.dot(X, theta)
         theta = theta - ((alpha / m) * (np.dot(X.T, (h - y))))
         # Save the cost J in every iteration
@@ -32,11 +31,6 @@ def gradientDescentMulti(X, y, theta, alpha, num_iters):
         # Save the cost J in every iteration
         J_history.append(computeCostMulti(X, y, theta))
 
+        # ============================================================
+
     return theta, J_history
-
-
-# X = np.matrix('2 1 3; 7 1 9; 1 8 1; 3 7 4 ')
-# y = np.matrix('2 ; 5 ; 5 ; 6')
-# theta = np.matrix('0;0;0')
-
-# print gradientDescentMulti(X, y, theta, 0.01, 100)

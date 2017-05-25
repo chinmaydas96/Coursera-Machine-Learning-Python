@@ -30,5 +30,4 @@ def featureNormalize(X):
 
 # ============================================================
 
-    return (X_norm, mu, sigma)
-
+    return X_norm, mu, sigma
