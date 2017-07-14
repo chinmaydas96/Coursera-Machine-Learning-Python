@@ -8,7 +8,6 @@ def featureNormalize(X):
        is 1. This is often a good preprocessing step to do when
        working with learning algorithms.
     """
-    X_norm, mu, sigma = 0, 0, 0
     # ====================== YOUR CODE HERE ======================
     # Instructions: First, for each feature dimension, compute the mean
     #               of the feature and subtract it from the dataset,
@@ -23,10 +22,18 @@ def featureNormalize(X):
     #               each feature.
     #
     # Hint: You might find the 'mean' and 'std' functions useful.
-    #
-    mu = np.mean(X)
-    sigma = np.std(X)
-    X_norm = (X - mu) / sigma
+    
+    mu = np.mean(X[:, :1])
+    sigma = np.std(X[:, :1])
+
+    mu1 = np.mean(X[:, 1:])
+    sigma1 = np.std(X[:, 1:])
+
+    x_ = (X[:, :1] - mu) / sigma
+    x1_ = (X[:, 1:] - mu1) / sigma1
+
+    X_norm = np.append(x_, x1_, axis=1)
+    return X_norm
 
 # ============================================================
 
