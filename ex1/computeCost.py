@@ -1,16 +1,16 @@
 import numpy as np
 from numpy import ones
 
-import pandas as pd 
-df = pd.read_csv('ex1data1.txt',names=['X','y'])
+# import pandas as pd 
+# df = pd.read_csv('ex1data1.txt',names=['X','y'])
 
-y = df['y']
-m = y.size
+# y = df['y']
+# m = y.size
 
 
-X = df.as_matrix(columns=['X'])
-X = np.append(ones((m,1)),X,axis=1)
-theta = np.zeros(2)
+# X = df.as_matrix(columns=['X'])
+# X = np.append(ones((m,1)),X,axis=1)
+# theta = np.zeros(2)
 
 def computeCost(X, y, theta):
 	"""
@@ -30,4 +30,4 @@ def computeCost(X, y, theta):
 
 	return J
 
-computeCost(X, y, theta)
+# computeCost(X, y, theta)
