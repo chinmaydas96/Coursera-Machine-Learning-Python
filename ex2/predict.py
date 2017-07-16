@@ -3,10 +3,10 @@ import numpy as np
 from sigmoid import sigmoid
 
 
-theta = [-25.8142, 0.2111, 0.2070]
-theta = np.asmatrix(theta)
-X = [[1, 45, 85],[1, 40 ,50]]
-X = np.asmatrix(X)
+# theta = [-25.8142, 0.2111, 0.2070]
+# theta = np.asmatrix(theta)
+# X = [[1, 45, 85],[1, 40 ,50]]
+# X = np.asmatrix(X)
 # print X.shape
 # print theta.shape
 

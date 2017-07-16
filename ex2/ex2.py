@@ -112,6 +112,7 @@ print 'For a student with scores 45 and 85, we predict an admission probability 
 
 # Compute accuracy on our training set
 p = predict(theta, X)
+print y.shape
 acc = 1.0*np.where(p == y)[0].size/len(p) * 100
 print 'Train Accuracy: %f' % acc
 
