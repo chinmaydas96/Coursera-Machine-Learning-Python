@@ -10,7 +10,7 @@ def predict(Theta1, Theta2, X):
 # Useful values
     m, _ = X.shape
     num_labels, _ = Theta2.shape
-
+    p  = 0
 # ====================== YOUR CODE HERE ======================
 # Instructions: Complete the following code to make predictions using
 #               your learned neural network. You should set p to a 
