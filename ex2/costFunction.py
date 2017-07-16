@@ -2,12 +2,12 @@ from numpy import log, matmul, ones, asmatrix
 from sigmoid import sigmoid
 import numpy as np
 
-data = np.loadtxt('ex2data1.txt', delimiter=',')
-X = asmatrix(data[:, 0:2])
-y = (asmatrix(data[:, 2])).T
-(m, n) = X.shape
-X = np.append(ones((m, 1)), X, axis=1)
-theta = asmatrix(np.zeros(n + 1))
+# data = np.loadtxt('ex2data1.txt', delimiter=',')
+# X = asmatrix(data[:, 0:2])
+# y = (asmatrix(data[:, 2])).T
+# (m, n) = X.shape
+# X = np.append(ones((m, 1)), X, axis=1)
+# theta = asmatrix(np.zeros(n + 1))
 
 def costFunction(theta, X, y):
 	""" computes the cost of using theta as the

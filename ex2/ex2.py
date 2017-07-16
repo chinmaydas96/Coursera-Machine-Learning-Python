@@ -71,9 +71,11 @@ initial_theta = np.zeros(n + 1)
 
 # Compute and display initial cost and gradient
 cost = costFunction(initial_theta, X, y)
+
 print 'Cost at initial theta (zeros): %f' % cost
 
 grad = gradientFunction(initial_theta, X, y)
+
 print 'Gradient at initial theta (zeros): ' + str(grad)
 
 raw_input("Program paused. Press Enter to continue...")
